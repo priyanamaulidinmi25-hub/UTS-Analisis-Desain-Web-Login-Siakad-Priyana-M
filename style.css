@@ -1,0 +1,314 @@
+
+
+/*SENGAJA BIKIN NAMA KODE HPIP, TABLET DLL SUPAYA BISA OTOMATIS MENYESUAIKAN DAN RAPIH YA PAK MWHEHEHE*/
+
+
+
+/* Pengaturan Halaman */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 1000px;
+    border: 1px solid black;
+}
+
+/* Bagian Header */
+.header {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.gambar {
+    width: 45px;
+    height: 45px;
+    objek-fit: contain;
+    vertical-align: middle;
+}
+
+.menu {
+    float: right;
+    margin-top: 10px;
+}
+
+.menu a {
+    color: black;
+    margin-left: 10px;
+}
+
+/* Bagian Isi */
+.isi {
+    padding: 30px;
+    text-align: center;
+    min-height: 180px;
+}
+
+
+/* Formulir Daftar */
+.form-daftar {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    table-layout: fixed;
+}
+
+.form-daftar td {
+    padding: 7px;
+}
+
+.form-daftar td:first-child {
+    width: 30%;
+}
+
+.form-daftar td:last-child {
+    width: 70%;
+}
+
+/* Semua Kotak Formulir */
+.form-daftar input[type="text"],
+.form-daftar input[type="password"],
+.form-daftar input[type="email"],
+.form-daftar textarea,
+.form-daftar select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Kotak Alamat */
+.form-daftar textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+/* Jenis Kelamin */
+.form-daftar input[type="radio"] {
+    width: auto;
+}
+
+/* Foto Profil */
+.form-daftar input[type="file"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* Formulir Login */
+.login-box {
+    width: 350px;
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+}
+
+/* Tombol */
+button {
+    padding: 8px 25px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Tabel Profil */
+.profil {
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.profil td {
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid black;
+    padding: 10px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.footer-kanan {
+    float: right;
+}
+
+/* Tampilan Tablet */
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .isi {
+        padding: 20px;
+    }
+
+    .form-daftar {
+        width: 100%;
+    }
+
+    .profil {
+        width: 100%;
+    }
+
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        float: none;
+        margin: 10px 0;
+    }
+
+    .menu a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .isi {
+        padding: 15px 10px;
+    }
+
+    .form-daftar {
+        width: 100%;
+    }
+
+    .form-daftar tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-daftar td {
+        display: block;
+        width: 100%;
+        padding: 3px;
+    }
+
+    .form-daftar td:first-child {
+        width: 100%;
+    }
+
+    .form-daftar input[type="text"],
+    .form-daftar input[type="password"],
+    .form-daftar input[type="email"],
+    .form-daftar textarea,
+    .form-daftar select {
+        width: 100%;
+    }
+
+    .form-daftar input[type="file"] {
+        max-width: 100%;
+    }
+
+    .form-daftar input[type="radio"] {
+        width: auto;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+
+    .login-box table {
+        width: 100%;
+    }
+
+    .login-box td {
+        display: block;
+        padding: 5px;
+    }
+
+    .profil {
+        width: 100%;
+    }
+
+    .profil td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button {
+        padding: 8px 18px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .footer-kanan {
+        float: none;
+        display: block;
+        margin-top: 8px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .form-daftar {
+        width: 100%;
+    }
+
+    .form-daftar tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-daftar td {
+        display: block;
+        width: 100% !important;
+        padding: 4px;
+    }
+
+    .form-daftar td:first-child {
+        width: 100%;
+    }
+
+    .form-daftar td:last-child {
+        width: 100%;
+    }
+
+    .form-daftar input[type="text"],
+    .form-daftar input[type="password"],
+    .form-daftar input[type="email"],
+    .form-daftar textarea,
+    .form-daftar select {
+        width: 100%;
+    }
+
+}
